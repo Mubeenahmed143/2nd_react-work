@@ -6,6 +6,7 @@ import Movies from './one';
 import './Movies.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Datewalakam from './date_time';
 
 function App() {
 
@@ -70,9 +71,10 @@ function App() {
 
   return (
     <div className="dark-theme">
+      <UncontrolledExample></UncontrolledExample>
   {/* Hero Section */}
   <div className="hero-section">
-    <img src="assets/featured.jpg" className="hero-img" alt="Featured" />
+  <Datewalakam></Datewalakam>
     <div className="hero-overlay">
       <h1>Red Brothers</h1>
       <p>Action | Crime | Thriller</p>
@@ -95,6 +97,10 @@ function App() {
       ))}
     </div>
   </div>
+  
+<ProductComponent></ProductComponent>
+<DummyJsonComponent></DummyJsonComponent>
+
 </div>
 
   );  
@@ -103,6 +109,3 @@ function App() {
 export default App;
 
 
-{/* <UncontrolledExample></UncontrolledExample>
-<ProductComponent></ProductComponent>
-<DummyJsonComponent></DummyJsonComponent> */}
