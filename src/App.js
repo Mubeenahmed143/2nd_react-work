@@ -7,6 +7,8 @@ import './Movies.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Datewalakam from './date_time';
+import Color from './events';
+import Addhook from "./book_hook";
 
 function App() {
 
@@ -70,42 +72,46 @@ function App() {
   ]
 
   return (
-    <div className="dark-theme">
-      <UncontrolledExample></UncontrolledExample>
-  {/* Hero Section */}
-  <div className="hero-section">
-  <Datewalakam></Datewalakam>
-    <div className="hero-overlay">
-      <h1>Red Brothers</h1>
-      <p>Action | Crime | Thriller</p>
+ <div>
+    {/* <Color></Color> */}
+    <Addhook></Addhook>
+
     </div>
-  </div>
-
-  {/* Movie Cards */}
-  <div className="container mt-5">
-    <h2 className="section-title">Trending Now</h2>
-    <div className="row g-4">
-      {cardData.map((card, index) => (
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
-          <Movies
-            img={card.img}
-            title={card.title}
-            detail={card.detail}
-            link={card.link}
-          />
-        </div>
-      ))}
-    </div>
-  </div>
-  
-<ProductComponent></ProductComponent>
-<DummyJsonComponent></DummyJsonComponent>
-
-</div>
-
   );  
 }
 
 export default App;
 
+//     <div className="dark-theme">
+//       <UncontrolledExample></UncontrolledExample>
+//   {/* Hero Section */}
+//   <div className="hero-section">
+//   <Datewalakam></Datewalakam>
+//     <div className="hero-overlay">
+//       <h1>Red Brothers</h1>
+//       <p>Action | Crime | Thriller</p>
+//     </div>
+//   </div>
+
+//   {/* Movie Cards */}
+//   <div className="container mt-5">
+//     <h2 className="section-title">Trending Now</h2>
+//     <div className="row g-4">
+//       {cardData.map((card, index) => (
+//         <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
+//           <Movies
+//             img={card.img}
+//             title={card.title}
+//             detail={card.detail}
+//             link={card.link}
+//           />
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+  
+// <ProductComponent></ProductComponent>
+// <DummyJsonComponent></DummyJsonComponent>
+
+// </div>
 
