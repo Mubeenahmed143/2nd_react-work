@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Datewalakam from './date_time';
 import Color from './events';
 import Addhook from "./book_hook";
+import FacebookPost from './fb_post'
+import EmployeeSalary from './inputs'
 
 function App() {
 
@@ -74,7 +76,11 @@ function App() {
   return (
  <div>
     {/* <Color></Color> */}
-    <Addhook></Addhook>
+    {/* <Addhook></Addhook> */}
+
+    <FacebookPost></FacebookPost>
+
+    {/* <EmployeeSalary></EmployeeSalary> */}
 
     </div>
   );  
