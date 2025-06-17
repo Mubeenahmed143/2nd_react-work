@@ -11,6 +11,10 @@ import Color from './events';
 import Addhook from "./book_hook";
 import FacebookPost from './fb_post'
 import EmployeeSalary from './inputs'
+// import Blog from './form'
+import Login from './form'
+
+
 
 function App() {
 
@@ -79,6 +83,9 @@ function App() {
     {/* <Addhook></Addhook> */}
 
     <FacebookPost></FacebookPost>
+    
+
+  <Login> </Login>
 
     {/* <EmployeeSalary></EmployeeSalary> */}
 
