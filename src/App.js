@@ -13,6 +13,8 @@ import FacebookPost from './fb_post'
 import EmployeeSalary from './inputs'
 // import Blog from './form'
 import Login from './form'
+import UserList from './user_api';
+import Counter from './effects_pro';
 
 
 
@@ -81,13 +83,13 @@ function App() {
  <div>
     {/* <Color></Color> */}
     {/* <Addhook></Addhook> */}
-
-    <FacebookPost></FacebookPost>
-    
-
-  <Login> </Login>
-
+    {/* <Login> </Login> */}
+    {/* <FacebookPost></FacebookPost> */}
     {/* <EmployeeSalary></EmployeeSalary> */}
+    {/* <ProductComponent></ProductComponent> */}
+    {/* <DummyJsonComponent></DummyJsonComponent> */}
+    {/* <UserList></UserList> */}
+    <Counter></Counter>
 
     </div>
   );  
@@ -123,8 +125,7 @@ export default App;
 //     </div>
 //   </div>
   
-// <ProductComponent></ProductComponent>
-// <DummyJsonComponent></DummyJsonComponent>
+
 
 // </div>
 
