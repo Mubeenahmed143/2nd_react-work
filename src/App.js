@@ -84,21 +84,26 @@ function App() {
   //   }
   
   // ]
-  const [user, setUser] = useState("Mubeen");
+
+  /////////////////////////////////////////////////////////////
+
+  const [cart, setCart] = useState([]);
   
   return (
     
-    <MyContext.Provider value={user}>
-      <h1>Main App</h1>
-      <ChildA />
-      <ChildB />
-    </MyContext.Provider>
-
-
+    <MyContext.Provider value={{ cart, setCart }}>
+    <div>
+      <DummyJsonComponent />
+      {/* <ChildA /> */}
+    </div>
+  </MyContext.Provider>
+    
   );  
 }
 
 export default App;
+
+/////////////////////////////////////////////////////
 
 //     <div className="dark-theme">
 //       <UncontrolledExample></UncontrolledExample>
@@ -116,7 +121,7 @@ export default App;
 //     <h2 className="section-title">Trending Now</h2>
 //     <div className="row g-4">
 //       {cardData.map((card, index) => (
-//         <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
+  //         <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
 //           <Movies
 //             img={card.img}
 //             title={card.title}
@@ -127,11 +132,12 @@ export default App;
 //       ))}
 //     </div>
 //   </div>
-  
+
 
 
 // </div>
 
+///////////////////////////////////////////////////////////
 
 //  <div>
 //     {/* <Color></Color> */}
@@ -140,9 +146,16 @@ export default App;
 //     {/* <FacebookPost></FacebookPost> */}
 //     {/* <EmployeeSalary></EmployeeSalary> */}
 //     {/* <ProductComponent></ProductComponent> */}
-//     {/* <DummyJsonComponent></DummyJsonComponent> */}
 //     {/* <UserList></UserList> */}
 //     {/* <Counter></Counter> */}
 
 
 //     </div>
+
+//////////////////////////////////////////////////////////////////
+
+// <MyContext.Provider value={user}>
+//   <h1>Main App</h1>
+//   <ChildA />
+//   <ChildB />
+// </MyContext.Provider>
