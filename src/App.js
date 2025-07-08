@@ -11,7 +11,7 @@ import Color from './events';
 import Addhook from "./book_hook";
 import FacebookPost from './fb_post'
 import EmployeeSalary from './inputs'
-import Login from './form'
+import StaticLogin from './form'
 import Counter from './effects_pro';
 import React, { createContext, useState } from 'react';
 
@@ -21,7 +21,7 @@ import Layout from './layout';
 // import AppNavbar from './navbar';  // moved to Layout
 import MovieList from './props';
 import Moviedetail from './props_detail'; // ✅ Correct
- // ✅ Correct
+import Login from './login';
 
 
 export const MyContext = createContext();
@@ -44,7 +44,7 @@ function App() {
       <div className="dark-theme">
         <Routes>
           <Route element={<Layout />}>
-            <Route index element={<Login />} />
+            <Route path='/' element={<Login />} />
             <Route path="/fb_post" element={<FacebookPost />} />
             <Route path="/one" element={<Movies />} />
             <Route path="/product" element={<DummyJsonComponent />} />

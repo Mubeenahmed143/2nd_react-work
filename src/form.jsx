@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 
-function Login() {
+function StaticLogin() {
     let [name, setname] = useState('');
     let [password, setpassword] = useState('');
 
@@ -50,7 +50,7 @@ function Login() {
 
 }
 
-export default Login;
+export default StaticLogin;
 
 
 
