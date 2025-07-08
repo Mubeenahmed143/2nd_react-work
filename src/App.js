@@ -19,7 +19,9 @@ import ChildB from './ChildB';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './layout';
 // import AppNavbar from './navbar';  // moved to Layout
-import MovieCard from './MovieCard'; // ✅ Correct
+import MovieList from './props';
+import Moviedetail from './props_detail'; // ✅ Correct
+ // ✅ Correct
 
 
 export const MyContext = createContext();
@@ -54,20 +56,22 @@ function App() {
             <Route path="/header" element={<UncontrolledExample />} />
             <Route path="/inputs" element={<EmployeeSalary />} />
             <Route path="/pro_detail" element={<ProductComponent />} />
+            <Route path="/props" element={<MovieList />} />
+            <Route path="/props_detail/:id" element={<Moviedetail />} />
           </Route>
         </Routes>
 
         {/* Hero Section */}
-        <div className="hero-section">
+        {/* <div className="hero-section">
           <Datewalakam />
           <div className="hero-overlay">
             <h1>Red Brothers</h1>
             <p>Action | Crime | Thriller</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Movie Cards */}
-        {cardData.map((card, index) => (
+        {/* {cardData.map((card, index) => (
   <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
     <MovieCard
       img={card.img}
@@ -76,7 +80,7 @@ function App() {
       link={card.link}
     />
   </div>
-))}
+))} */}
 
 
  
