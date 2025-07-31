@@ -25,6 +25,7 @@ function AppNavbar() {
             <NavLink to="/header" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Header</NavLink>
             <NavLink to="/inputs" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Salary</NavLink>
             <NavLink to="/pro_detail" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Product Detail</NavLink>
+            <NavLink to="/material_ui" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Material_ui</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

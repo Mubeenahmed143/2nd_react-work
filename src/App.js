@@ -22,6 +22,7 @@ import Layout from './layout';
 import MovieList from './props';
 import Moviedetail from './props_detail'; // ✅ Correct
 import Login from './login';
+import Material_ui from './material_ui';
 
 
 export const MyContext = createContext();
@@ -42,9 +43,11 @@ function App() {
   return (
     <MyContext.Provider value={{ cart, setCart }}>
       <div className="dark-theme">
+        
+        <Login />
         <Routes>
           <Route element={<Layout />}>
-            <Route path='/' element={<Login />} />
+            <Route path='/' element={<Material_ui />} />
             <Route path="/fb_post" element={<FacebookPost />} />
             <Route path="/one" element={<Movies />} />
             <Route path="/product" element={<DummyJsonComponent />} />
@@ -58,6 +61,7 @@ function App() {
             <Route path="/pro_detail" element={<ProductComponent />} />
             <Route path="/props" element={<MovieList />} />
             <Route path="/props_detail/:id" element={<Moviedetail />} />
+            {/* <Route path="/material_ui" element={<Material_ui />} /> */}
           </Route>
         </Routes>
 
