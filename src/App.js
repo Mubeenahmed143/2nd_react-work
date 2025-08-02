@@ -19,10 +19,15 @@ import ChildB from './ChildB';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './layout';
 // import AppNavbar from './navbar';  // moved to Layout
-import MovieList from './props';
+// import MovieList from './props';
 import Moviedetail from './props_detail'; // ✅ Correct
 import Login from './login';
 import Material_ui from './material_ui';
+import Addmovies from './add_movies';
+import MovieList from './fetch_movies';
+import MovieDetail from './detail_movies';
+import EditMovie from './edit_movie';
+import MovieListA from './movie_fetchA'
 
 
 export const MyContext = createContext();
@@ -43,11 +48,11 @@ function App() {
   return (
     <MyContext.Provider value={{ cart, setCart }}>
       <div className="dark-theme">
-        
-        <Login />
+
         <Routes>
+          
           <Route element={<Layout />}>
-            <Route path='/' element={<Material_ui />} />
+            <Route path='/' element={<Login />} />
             <Route path="/fb_post" element={<FacebookPost />} />
             <Route path="/one" element={<Movies />} />
             <Route path="/product" element={<DummyJsonComponent />} />
@@ -61,6 +66,11 @@ function App() {
             <Route path="/pro_detail" element={<ProductComponent />} />
             <Route path="/props" element={<MovieList />} />
             <Route path="/props_detail/:id" element={<Moviedetail />} />
+            <Route path='/fetch_movies' element={<MovieList />} />
+            <Route path='/fetch_movies/:id' element={<MovieDetail />} />
+            <Route path="/movie_fetchA" element={<MovieListA />} />
+            <Route path="/movie/edit/:id" element={<EditMovie />} />
+            <Route path='/add_movies' element={<Addmovies />} />
             {/* <Route path="/material_ui" element={<Material_ui />} /> */}
           </Route>
         </Routes>
@@ -87,7 +97,7 @@ function App() {
 ))} */}
 
 
- 
+
       </div>
     </MyContext.Provider>
   );

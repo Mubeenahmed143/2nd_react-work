@@ -15,9 +15,10 @@ function AppNavbar() {
           <Nav className="me-auto">
             <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
             <NavLink to="/fb_post" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>FB Post</NavLink>
-            <NavLink to="/props" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Movies</NavLink>
+            <NavLink to="/add_movies" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Add Movies</NavLink>
             <NavLink to="/product" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Product</NavLink>
-           
+            <NavLink to="/movie_fetchA" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Show Movies</NavLink>
+            <NavLink to="/MovieList" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> Movies</NavLink>
             <NavLink to="/book_hook" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Add Hook</NavLink>
             <NavLink to="/date_time" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Date Time</NavLink>
             <NavLink to="/effects_pro" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Counter</NavLink>
